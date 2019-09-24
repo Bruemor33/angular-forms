@@ -4,6 +4,7 @@ import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { UserSettingsFormComponent } from './form/form.component';
 
 @NgModule({
     declarations: [
@@ -12,6 +13,10 @@ import { WelcomeComponent } from './welcome/welcome.component';
     imports: [
         BrowserModule,
         RouterModule.forRoot([
+            {
+                path: 'user-settings',
+                component: UserSettingsFormComponent
+            },
             {
                 path: 'welcome',
                 component: WelcomeComponent
