@@ -4,7 +4,8 @@
   "description": "Diving into Angular forms...",
   "main": "src/main.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "admin": "node ./",
+    "ng": "node ./node_modules/@angular/cli/bin/ng"
   },
   "repository": {
     "type": "git",
