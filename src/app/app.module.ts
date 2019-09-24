@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
+import { WelcomeComponent } from './welcome/welcome.component';
 
 @NgModule({
     declarations: [
@@ -14,6 +15,16 @@ import { AppComponent } from './app.component';
             {
                 path: 'welcome',
                 component: WelcomeComponent
+            },
+            {
+                path: '',
+                redirectTo: 'welcome',
+                pathMatch: 'full'
+            },
+            {
+                path: '**',
+                redirectTo: 'welcome',
+                pathMatch: 'full'
             }
         ])
     ],
